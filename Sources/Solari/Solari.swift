@@ -11,11 +11,3 @@ public func enableLiquidGlass() {
         UserDefaults.standard.set(true, forKey: key)
     }
 }
-
-public extension View {
-    func enableLiquidGlass() -> some View {
-        self.onAppear {
-            enableLiquidGlass()
-        }
-    }
-}
